@@ -21,7 +21,7 @@ int main()
     char c = 'C';
 
     voidPtr = &a;
-    printf("Gia tri cua a: ", *(int *)voidPtr);
+    printf("Gia tri cua a: %d", *(int *)voidPtr);
     return 0;
 }
 ```
@@ -42,10 +42,10 @@ int main()
     int b = 5;
     int (* funcPtr)(int, int);
     funcPtr = &Tru;
-    printf("A - B = ",funcPtr(a,b));
+    printf("A - B = %d\n",funcPtr(a,b));
 
     funcPtr = &Cong;
-    printf("A + B = ",funcPtr(a,b));
+    printf("A + B = %d\n",funcPtr(a,b));
 
     return 0;
 }
@@ -61,9 +61,9 @@ int main()
 
     const int* ptr;
     ptr = &a;
-    printf("Gia tri a: ", *ptr);
+    printf("Gia tri a: %d\n", *ptr);
     ptr = &b;
-    printf("Gia tri b: ", *ptr);
+    printf("Gia tri b: %d\n", *ptr);
     return 0;
 }
 ```
@@ -88,7 +88,7 @@ int main()
     int a = 10;
     int *ptr1 = &a;
     int **ptr2 = &ptr;
-    printf("gia tri cua a: ", **ptr2);
+    printf("gia tri cua a: %dd", **ptr2);
     return 0;
 }
 ```
